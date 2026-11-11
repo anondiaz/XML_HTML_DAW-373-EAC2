@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="punts_recarrega.xsl"?>
+<puntsRecarrega>
+  <puntRecarrega id="E001" DESTACAT="sí">
+    <TIPUS>ràpida</TIPUS>
+    <NOM>Estació Fira de Barcelona</NOM>
+    <UBICACIO>Barcelona - Gran Via</UBICACIO>
+    <DATA>14-11-2026</DATA>
+    <PLACES>17</PLACES>
+    <DISPONIBLES>10</DISPONIBLES>
+  </puntRecarrega>
+  <puntRecarrega id="E002" DESTACAT="no">
+    <TIPUS>lenta</TIPUS>
+    <NOM>Aparcament Park Diagonal</NOM>
+    <UBICACIO>Barcelona - L'Eixample</UBICACIO>
+    <DATA>21-11-2026</DATA>
+    <PLACES>25</PLACES>
+    <DISPONIBLES>19</DISPONIBLES>
+  </puntRecarrega>
+  <puntRecarrega id="E003" DESTACAT="sí">
+    <TIPUS>ultraràpida</TIPUS>
+    <NOM>Àrea de servei AP-7 Sud</NOM>
+    <UBICACIO>La Jonquera</UBICACIO>
+    <DATA>09-07-2027</DATA>
+    <PLACES>13</PLACES>
+    <DISPONIBLES>7</DISPONIBLES>
+  </puntRecarrega>
+  <puntRecarrega id="E004" DESTACAT="no">
+    <TIPUS>semiràpida</TIPUS>
+    <NOM>CC La Maquinista</NOM>
+    <UBICACIO>Barcelona - Sant Andreu</UBICACIO>
+    <DATA>05-12-2026</DATA>
+    <PLACES>20</PLACES>
+    <DISPONIBLES>14</DISPONIBLES>
+  </puntRecarrega>
+  <puntRecarrega id="E005" DESTACAT="sí">
+    <TIPUS>ràpida</TIPUS>
+    <NOM>Polígon Can Sant Joan</NOM>
+    <UBICACIO>Sant Cugat del Vallès</UBICACIO>
+    <DATA>12-06-2027</DATA>
+    <PLACES>15</PLACES>
+    <DISPONIBLES>10</DISPONIBLES>
+  </puntRecarrega>
+  <puntRecarrega id="E006" DESTACAT="no">
+    <TIPUS>altres</TIPUS>
+    <NOM>Punt municipal (pilot)</NOM>
+    <UBICACIO>Girona - Pl. Catalunya</UBICACIO>
+    <DATA>15-03-2027</DATA>
+    <PLACES>9</PLACES>
+    <DISPONIBLES>4</DISPONIBLES>
+  </puntRecarrega>
+</puntsRecarrega>
