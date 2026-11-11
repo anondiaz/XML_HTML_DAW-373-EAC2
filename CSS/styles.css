@@ -1,10 +1,11 @@
 
 /* Variables generals */
 :root {
-    --width_xl: 1000px;
+    --width_xl: 1200px;
     --primary_color: #266fdc;
     --secondary_color: #173e75;
     --background_color: #f3f6fa;
+    --destacat_color: #f6c68f;
     --card_color: #ffffff;
     --text_color: #202b3a;
     --border_color: #dce3eb;
@@ -196,6 +197,25 @@ table {
     tbody tr:hover {
         background-color: #e3edfc;
     }
+}
+
+.tornar-portada {
+    margin-top: 2rem;
+    text-align: right;
+
+    a {
+        color: var(--secondary_color);
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+table tbody tr.destacat {
+    background-color: var(--destacat_color);
 }
 
 /* Peu de pàgina */
