@@ -1,0 +1,170 @@
+
+/* Variables específicas de las fichas */
+:root {
+    --disponible_color: #28a745;
+    --destacat_fitxa_color: #0056a8;
+    --gratuit_color: #ffc107;
+}
+
+/* Primera sección: introducción */
+main section > p {
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
+
+/* Leyenda de colores */
+.llegenda {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 1.5rem 0;
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+    }
+}
+
+.indicador {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid #444;
+}
+
+.indicador.disponible {
+    background-color: var(--disponible_color);
+}
+
+.indicador.destacat {
+    background-color: var(--destacat_fitxa_color);
+}
+
+.indicador.gratuit {
+    background-color: var(--gratuit_color);
+}
+
+/* Distribución de las fichas */
+.graella-fitxes {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+/* Estilo de cada ficha */
+.fitxa {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid var(--border_color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+    img {
+        display: block;
+        width: 100%;
+        height: 190px;
+        object-fit: cover;
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 18px #00000025;
+    }
+}
+
+/* Fichas destacadas */
+.fitxa.punt-destacat {
+    border: 2px solid var(--destacat_fitxa_color);
+}
+
+/* Contenido de las fichas */
+.fitxa-contingut {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.25rem;
+
+    h3 {
+        color: var(--secondary_color);
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        margin-bottom: 0.4rem;
+    }
+
+    .ubicacio {
+        color: #586577;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Etiquetas de estado */
+.etiquetes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.etiqueta {
+    display: inline-block;
+    padding: 0.25rem 0.7rem;
+    border-radius: 20px;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.etiqueta.disponible {
+    background-color: var(--disponible_color);
+}
+
+.etiqueta.destacat {
+    background-color: var(--destacat_fitxa_color);
+}
+
+.etiqueta.gratuit {
+    background-color: var(--gratuit_color);
+    color: black;
+}
+
+/* Enlace con aspecto de botón */
+.boto {
+    display: block;
+    margin-top: auto;
+    padding: 0.75rem 1rem;
+    background-color: var(--primary_color);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: var(--secondary_color);
+    }
+}
+
+/* Adaptación a tabletas */
+@media (max-width: 768px) {
+    .graella-fitxes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Adaptación a móviles */
+@media (max-width: 480px) {
+    .graella-fitxes {
+        grid-template-columns: 1fr;
+    }
+
+    .llegenda {
+        gap: 1rem;
+    }
+}
